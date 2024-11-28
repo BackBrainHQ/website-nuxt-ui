@@ -68,7 +68,7 @@ jobs:
         run: npx nuxi build --preset github_pages
         env:
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
-          
+          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
 
       # Deployment job
       - name: Deploy 🚀
